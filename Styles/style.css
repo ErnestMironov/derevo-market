@@ -206,7 +206,7 @@ header{
     box-shadow: 0 0 15px 3px #1414143b;
     justify-content: center;
 }
-.header__bottom__contacts.flex{
+.header__bottom__contacts{
 	height: 70px;
 	-ms-align-items: center;
 	align-items: center;
@@ -393,6 +393,105 @@ header{
     font-family: 'Proxima Nova Th';
     font-weight: 800;
 }
+.single > h1{
+	font-size: 30px;
+    padding: 10px 0px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+}
+.single__media{
+	-ms-align-items: center;
+	align-items: center;
+}
+.tabs__header{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.tabs__header > div{
+	display: block;
+	float: left;
+	margin-right: 21px;
+	font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 14px;
+    color: #808080;
+    border-bottom: 1px solid #e3e3e3;
+}
+.single__media__images{
+	width: 235px;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.single__media__images > img{
+	width: 114px;
+}
+.single__media__images > img:nth-child(1){
+	width: 100%;
+	margin-bottom: 8px;
+}
+.single__media__table.tabs > div > div > table > tbody > tr > td{
+	width: 107px;
+	height: 35px;
+	text-align: center;
+	font-family: 'Proxima Nova Rg';
+	font-size: 13px;
+}
+.single__media__table.tabs > div > div > table > tbody > tr > td > a{
+	font-family: 'Proxima Nova Lt';
+	font-size: 13px;
+	border-bottom: 1px solid #daeedd;
+	color: #44b759;
+	font-weight: 600;
+	text-decoration: none;
+}
+.single__media__table.tabs > div > div > table > tbody > tr:nth-child(2n){
+	background-color: #f3f3f3;
+}
+.single__media__table{
+	max-width: 535px;
+}
+	#wr-tabs .tabs{
+		background-color: #fff;
+		margin-bottom: 3px;
+	}
+	#wr-tabs .tabs:after{
+		content: "";
+		display: block;
+		clear: both;
+		height: 0;
+	}
+		#wr-tabs .tabs .tab{
+			float: left;
+			cursor: pointer;
+		}
+		#wr-tabs .tabs .tab:last-child{
+		}
+		#wr-tabs .tabs .tab:hover,
+		#wr-tabs .tabs .tab.active{
+			color: #44b759;
+			border: none;
+
+		}
+	#wr-tabs .content{
+		background-color: #fff;
+	}
+		#wr-tabs .content .tab-cont{
+			display: none;
+			padding: 15px 10px;
+		}
+		#wr-tabs .content .tab-cont.active{
+			display: block;
+		}
+.single__text h2{
+	font-family: 'Proxima Nova Lt';
+	font-size: 18px;
+	font-weight: 600;
+	padding: 10px 0px 25px;
+}
+
 
 footer{
 	margin-top: 35px;
@@ -461,6 +560,15 @@ footer{
 	.header__bottom__contacts__phone > a, .footer__contacts > ul > li > span > a{
 		font-size: 16px;
 	}
+	.single__media__table {
+    	width: 62%;
+	}
+	.single__media__images{
+		width: 38%;
+	}
+	.single__media__images > img {
+    	width: 45%;
+	}
 	footer{
 		font-size: 13px;
 	}
@@ -523,3 +631,5 @@ footer{
 		max-width: 100%;
 	}
 }
+
+
