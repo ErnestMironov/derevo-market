@@ -438,6 +438,7 @@ header{
 	text-align: center;
 	font-family: 'Proxima Nova Rg';
 	font-size: 13px;
+	vertical-align: middle;
 }
 .single__media__table.tabs > div > div > table > tbody > tr > td > a{
 	font-family: 'Proxima Nova Lt';
