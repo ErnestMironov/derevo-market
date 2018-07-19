@@ -31,6 +31,7 @@ $('.fa-bars').click(function(){
 	$('.sidebar').slideToggle();
 }
 )
+/*----------------TABS---------------*/
 $(function(){
 
 	$("#wr-tabs").on("click", ".tab", function(){
@@ -47,4 +48,8 @@ $(function(){
 
 		return false;
 	});
+});
+
+$('[data-fancybox="images"]').fancybox({
+ 
 });
