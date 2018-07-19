@@ -425,10 +425,10 @@ header{
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
-.single__media__images > img{
+.single__media__images > a > img{
 	width: 114px;
 }
-.single__media__images > img:nth-child(1){
+.single__media__images > a:nth-child(1) > img{
 	width: 100%;
 	margin-bottom: 8px;
 }
