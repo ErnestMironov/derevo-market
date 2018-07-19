@@ -530,6 +530,7 @@ form#f_contact > input{
     border-bottom: 1px solid black;
     padding-bottom: 0px;
     margin-bottom: 15px;
+    padding-left: 8px;
 }
 form#f_contact > button{
     width: 199px;
