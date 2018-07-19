@@ -68,7 +68,7 @@ td {font-weight: normal; vertical-align: top;}
 
 hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
 
-input, select {vertical-align: middle;}
+input, select {vertical-align: middle; outline: none;}
 
 pre {
     white-space: pre; /* CSS2 */
@@ -114,7 +114,9 @@ button, input, select, textarea {margin: 0;}
 /* make buttons play nice in IE */
 button,
 input[type=button] {width: auto; overflow: visible;}
-
+a{
+	outline: none;
+}
 /* scale images in IE7 more attractively */
 .ie7 img {-ms-interpolation-mode: bicubic;}
 
@@ -145,7 +147,6 @@ header{
 	max-width: 870px;
 }
 .flex{
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -231,7 +232,7 @@ header{
     font-size: 16px;
     border-radius: 5px;
     box-shadow: 0 0 10px #808080bf;
-
+	text-decoration: none;
 }
 
 .header__bottom__callback:hover{
@@ -267,8 +268,6 @@ header{
   font-weight: 700;
   border-bottom: 1px solid #dfdfdf;
   position: relative;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
@@ -280,8 +279,6 @@ header{
   left: 12px;
   font-size: 18px;
   color: #595959;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
@@ -296,8 +293,6 @@ header{
 
 .accordion li.open i.fa-chevron-down {
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -323,8 +318,6 @@ header{
   padding: 12px;
   padding-left: 15px;
   font-size: 13px;
-  -webkit-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 
@@ -356,7 +349,6 @@ header{
 }
 .catalog__catalog-section__item:hover{
 	border: none;
-	-webkit-box-shadow: 0 0 12px #808080a8;
 	box-shadow: 0 0 12px #808080a8;
 }
 .catalog__catalog-section > a{
@@ -419,9 +411,6 @@ header{
 }
 .single__media__images{
 	width: 235px;
-	-webkit-flex-wrap: wrap;
-	-moz-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
@@ -492,9 +481,11 @@ header{
 	font-weight: 600;
 	padding: 10px 0px 25px;
 }
+.single__text > p{
+	font-family: 'Proxima Nova Rg';
+}
 
-
-footer{
+.footer_desktop{
 	margin-top: 35px;
     background-color: white;
     padding: 19px 0;
@@ -522,6 +513,28 @@ footer{
 	color: black;
 }
 
+#feedback {display:none;}
+
+form#f_contact{
+	border-radius: 10px;
+	font-family: 'Proxima Nova Rg';	
+}
+#feedback > h2{
+	font-weight: 600;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+form#f_contact > input{
+	border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 0px;
+    margin-bottom: 15px;
+}
+form#f_contact > button{
+    width: 199px;
+    border: none;
+}
 
 /* ---------------MEDIA---------------- */
 @media screen and (min-width: 1170px){
