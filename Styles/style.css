@@ -484,8 +484,10 @@ header{
 .single__text > p{
 	font-family: 'Proxima Nova Rg';
 }
-
-.footer_desktop{
+.footer_mobile{
+	display: none;
+}
+.footer_desktop, .footer_mobile__top{
 	margin-top: 35px;
     background-color: white;
     padding: 19px 0;
@@ -644,6 +646,12 @@ form#f_contact > button{
 	.accordion{
 		border-radius: 0;
 		max-width: 100%;
+	}
+	.footer_mobile{
+		display: block;
+	}
+	.footer_desktop{
+		display: none;
 	}
 }
 
