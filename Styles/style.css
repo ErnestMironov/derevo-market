@@ -140,10 +140,10 @@ header{
 	font-size: 14px;
 	width: 100%;
 }
-.container-main{
+.container_main{
 	max-width: 1170px;
 }
-.container-content{
+.container_content{
 	max-width: 870px;
 }
 .flex{
@@ -370,7 +370,7 @@ header{
     color: #44b759;
 }
 
-.container-content > div > div:nth-child(2) > a:nth-child(3) > div:before{
+.container_content > div > div:nth-child(2) > a:nth-child(3) > div:before{
 	content: 'New';
     position: absolute;
     top: -1px;
@@ -515,10 +515,15 @@ header{
 	color: black;
 }
 
-#feedback {display:none;}
+#feedback {
+	display:none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;}
 
 form#f_contact{
-	border-radius: 10px;
 	font-family: 'Proxima Nova Rg';	
 }
 #feedback > h2{
@@ -541,18 +546,18 @@ form#f_contact > button{
 
 /* ---------------MEDIA---------------- */
 @media screen and (min-width: 1170px){
-	.container-main{
+	.container_main{
 		width: 1170px;
 }
-	.container-content {
+	.container_content {
     	width: 870px;
 	}
 }
 @media screen and (max-width: 1169px){
-	.container-main {
+	.container_main {
     	width: 95%;
 	}
-	.container-content {
+	.container_content {
     	width: 75%;
 	}
 	header{
@@ -591,11 +596,11 @@ form#f_contact > button{
 	}
 }
 @media screen and (max-width: 768px){
-	.container-main {
+	.container_main {
 	    width: 100%;
 	    padding: 0 20px;
 	}
-	.container-content {
+	.container_content {
 	    width: 75%;
 	}
 	.header__top__menu > ul > li {
@@ -636,7 +641,7 @@ form#f_contact > button{
 	.sidebar{
 		display: none;
 	    position: absolute;
-	    width: 100vw;
+	    width: 100%;
 	    height: 100vh;
 	    z-index: 1000;
 	    margin-top: 0;
@@ -653,6 +658,78 @@ form#f_contact > button{
 	.footer_desktop{
 		display: none;
 	}
+	.footer_mobile__bottom{
+	    height: 45px;
+	    justify-content: center;
+	    -ms-align-items: center;
+	    align-items: center;
+	    font-family: 'Proxima Nova Rg';
+	    color: #808080;
+	}
+	.footer_mobile__top > .container_main{
+		-ms-align-items: center;
+		align-items: center;
+	}
 }
-
+@media screen and (max-width: 568px){
+	.container_content{
+		width: 100%;
+	}
+	.header__top__logo{
+		display: none;
+	}
+	.header__top__menu{
+		width: 100%;
+	}
+	.header__top__menu > ul{
+		width: 100%;
+	}
+	.header__bottom__contacts{
+		font-size: 12px;
+	}
+	.header__top__menu.va-center.flex > ul > li:nth-child(2){
+		width: 30%;
+	}
+	.header__top__menu > ul > li{
+		margin-left: 0;
+	}
+	.header__bottom__callback{
+		width: 130px;
+	    font-size: 14px;
+	    text-align: center;
+	}
+	.banner > img{
+		height: 65px;
+	}
+	.catalog__catalog-section{
+		justify-content: center;
+	}
+	.catalog__catalog-section__item{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 467px){
+	.sidebar{
+		width: calc(100vw + 20px);
+	}
+	.container_main{
+		padding: 0px 10px;
+	}
+	.catalog__catalog-section__item{
+		justify-content: center;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.footer_mobile {
+		font-size: 11px;
+	}
+	.footer__contacts > ul > li > span > a{
+		font-size: 14px;
+	}
+}
 
