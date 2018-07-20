@@ -27,10 +27,18 @@ $(function() {
 });
 
 /*------------SHOW MOBILE MENU-----------*/
+if(document.documentElement.clientWidth < 769) {
 $('.fa-bars').click(function(){
 	$('.sidebar').slideToggle();
+})
+
+$(document).mouseup(function (e) {
+    var container = $(".sidebar");
+    if (container.has(e.target).length === 0){
+        container.hide();
+    }
+});
 }
-)
 /*----------------TABS---------------*/
 $(function(){
 
@@ -50,6 +58,8 @@ $(function(){
 	});
 });
 
+/*-------FANCYBOX------------*/
+
 $('[data-fancybox="images"]').fancybox({
 
 });
@@ -65,6 +75,8 @@ $(".modalbox").fancybox();
             setTimeout("$.fancybox.close()", 1000);
         });
     });
+
+/*--------------MASKED_INPUT--------------*/
 
  $(function(){
   //2. Получить элемент, к которому необходимо добавить маску
