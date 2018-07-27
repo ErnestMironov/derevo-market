@@ -418,7 +418,7 @@ header{
 	width: 114px;
 }
 .single__media__images > a:nth-child(1) > img{
-	width: 100%;
+	width: 235px;
 	margin-bottom: 8px;
 }
 .single__media__table.tabs > div > div > table > tbody > tr > td{
@@ -543,7 +543,9 @@ form#f_contact > button{
     width: 199px;
     border: none;
 }
-
+#accordion > li:nth-child(1) > div:nth-child(1){
+	display: none;
+}
 /* ---------------MEDIA---------------- */
 @media screen and (min-width: 1170px){
 	.container_main{
@@ -691,6 +693,19 @@ form#f_contact > button{
 	}
 	.single__media__images.flex > a:nth-child(1){
 		grid-area: big;
+	}
+	#accordion > li:nth-child(1) > div:nth-child(1){
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		border: none;
+		padding-bottom: 0;
+		justify-content: flex-end;
+	}
+	.fa-times.menu-close{
+		position: static;
 	}
 }
 @media screen and (max-width: 568px){
