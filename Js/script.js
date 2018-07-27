@@ -31,7 +31,9 @@ if(document.documentElement.clientWidth < 769) {
 $('.fa-bars').click(function(){
 	$('.sidebar').slideToggle();
 })
-
+$('.menu-close').click(function(){
+	$('.sidebar').slideToggle();
+})
 $(document).mouseup(function (e) {
     var container = $(".sidebar");
     if (container.has(e.target).length === 0){
